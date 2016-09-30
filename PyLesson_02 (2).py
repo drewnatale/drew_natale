@@ -1,23 +1,28 @@
+
 num1 = 2
+
 num2 = 8
 print (num1 * num2)
 
-
-
-print =  ( "drew" )
-print =  ( "roselle meadows trail" )
-print = ( "San Diego" )  
-print =  ( "92130" )
+name = input ("whats you name?")
+address = input ("whats your address?")
+city = input ("whats your city?")
+zip = input ("whats your zip?")
 
 
 
-l = 2
+length = int(input("what is the length?"))
+width = int(input("what is the width?"))
+height = int(input("whats is the height"))
 
-w = 5
+def problem(l, w, h):
+    return((l*w*h)*2)
 
-h = 7
 
-print ( "l * w * h" )
+print("The surface area of your rectangle is: ", problem(length,width,height))
+
+
+
 
 
 
