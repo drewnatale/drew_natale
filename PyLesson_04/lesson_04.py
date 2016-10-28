@@ -1,5 +1,6 @@
 
 
+
 def printf(word,number):
     print("{:<6)\t}". format(word, number))
 print("<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>")

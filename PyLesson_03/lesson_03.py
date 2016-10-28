@@ -11,15 +11,15 @@ print(siblings , "that sucks ")
 grown = input ("what do you want to be when you grow up? ")
 print( grown , "yeah good luck with that ")
 
-num1 = input ("what is your height?")
-num2 = input ("what is your weight?")
-print( "" , num1/num2, "")
+h = float(input("what is your height?"))
+w = float(input("what is your weight?"))
+print( "Your BMI is " , (703*w)/h**2, ".")
 
 
 
 
-num1 = int(input ("your age: ")
-num2 = int(input ("oldest siblings age: ")
+num1 = int(input ("your age: "))
+num2 = int(input ("oldest siblings age: "))
 
 print("they were" , num2-num1, "when you were born")
         

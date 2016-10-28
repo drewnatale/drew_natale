@@ -1,3 +1,4 @@
+
 def problem(p,r,n,t):
     return(p*((1+(n/r))**(n*t)))
 
