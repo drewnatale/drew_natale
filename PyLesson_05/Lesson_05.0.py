@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def calcDisc(sub):
     if subtotal >= 2000:
         return subtotal * 0.15
@@ -34,8 +34,8 @@ printf("tax: ", tax)
 printf("total ", total)
 print("Thank You")
 
-#if subtotal is >= 2000 return subtotal * 0.15, otherwise return 0
-=======
+
+
 def calcDisc(sub):
     if subtotal >= 2000:
         return subtotal * 0.15
@@ -71,5 +71,5 @@ printf("tax: ", tax)
 printf("total ", total)
 print("Thank You")
 
-#if subtotal is >= 2000 return subtotal * 0.15, otherwise return 0
->>>>>>> origin/master
+
+
