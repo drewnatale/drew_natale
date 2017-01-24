@@ -1,5 +1,10 @@
 import random;
 
+if player > computer  
+
+if computer > 
+
+
 player = random.randint(1,6);
 computer = random.randint(1,6);
 
