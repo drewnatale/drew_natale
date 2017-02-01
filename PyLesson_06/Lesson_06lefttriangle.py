@@ -1,11 +1,7 @@
-word = input("what is the word?")
+word = input("enter a word")
 
-for i in range(len(word)[i:0]):
-         print(word),[0,-1]
-
-
-
+for i in range (len(word)-1, 0):
+         print(word[0:i])
+         
 
 
-
-(len(word),0,-1)

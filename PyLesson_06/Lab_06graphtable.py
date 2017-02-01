@@ -1,6 +1,6 @@
-integer = input("what is an integer?")
+integer = input("enter an integer")
 
-size = input("what is the size?")
+size = input("enter the size")
 
 for i in range(1, size):
-    print(
+    print(i)
