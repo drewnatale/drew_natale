@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 w=float(input("what is your weight?"))
 h=float(input("what is your weight?"))
 
@@ -20,8 +19,6 @@ if 35<bmi<39.9:
 if bmi>39.9:
     print("condition morbidly obese")
 
-
-=======
 w=float(input("what is your weight?"))
 h=float(input("what is your weight?"))
 
@@ -43,5 +40,3 @@ if 35<bmi<39.9:
 if bmi>39.9:
     print("condition morbidly obese")
 
-
->>>>>>> origin/master
