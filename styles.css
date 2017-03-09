@@ -1,0 +1,24 @@
+h1{color: blue;}
+p{font-family: ariel;}
+a{color: grey;} 
+p:first-letter{
+	font-weight: bold;
+	font-size: 30px;
+	color: blue;
+}
+ 
+p:first-line{
+	color: green;
+	font-variant: caps;
+}
+
+p:nth-child{
+	color:purple;
+}
+
+#grey { 
+	color: grey;
+	boarder: 2px solid grey;
+	postiton: absolute;
+	top:15px;
+} 
