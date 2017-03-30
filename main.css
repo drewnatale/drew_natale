@@ -19,7 +19,7 @@ body {
 	text-align: center; 
 } 
 
-#theDiv {
+#bigWrapper {
 	border: 1px solid purple;
 	width: 100px;
 	margin: 20px auto;
