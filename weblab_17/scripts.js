@@ -3,12 +3,13 @@ function drag() {
     leftBox = document.getElementById("leftBox");
 
     roses.addEventListener("dragstart", startDrag, false);
-    roses.addEventListener("dragend", endDrag, false);
+
 
     leftBox.addEventListener("dragenter", dragEnter, false);
-    leftBox.addEventListener("dragLeave",dragLeave, false);
-    leftBox.addEventListener("dragover", function(e){e.preventDefault()}, false);
+    leftBox.addEventListener("dragleave",dragLeave, false);
+    leftBox.addEventListener("drgover", function(e){e.preventDefault()}, false);
     leftBox.addEventListener("drop", drop, false);
+    roses.addEventListener("dragend", endDrag, false);
 }
 
 function startDrag(e)
@@ -34,7 +35,8 @@ function drop(e) {
     leftBox.innerHTML = e.dataTransfer.getData('Picture');
 }
 
-fucntion endDrag(e) {
+function endDrag(e)
+{
     pic = e.target
     pic.style.visibility = "hidden";
 }

@@ -17,3 +17,11 @@
 #roses {
     max-height: 100px;
 }
+
+
+
+
+canvas.clearRect(0, 0, 600, 600);
+var xPos = e.clientX;
+var yPos = e.clientY;
+canvas.fillRect(xPos, yPos, 100, 100);
