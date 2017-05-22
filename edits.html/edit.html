@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>Final Project: Snake Game- Period #3</title>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <h1>Computer Programming Final Project: Simple Snake Game</h1>
+    <link rel = "stylesheet" href = "main.css"/>
+    <style>
+        #canvas{
+            outline: 1px solid #000000;
+        }
+    </style>
+
 </head>
 <body>
     <div style= "width: 888px; margin: auto;">
         <canvas id="myCanvas" width="800" height="500"
-         style="background: black;">
+         style="background: deepskyblue;">
         </canvas>
     </div>
     <script>
@@ -30,6 +38,13 @@
 
         function createFood() {
             food = {x: Math.floor(Math.random()*39), y: Math.floor(Math.random()*24)};
+            for(var i =0; i< balls.length; i++){
+                var ball = balls[i];
+                if(food.x *20 == ball.x && food.y*20 == ball.y){
+                    createFood();
+
+                }
+            }
         }
 
         init();
@@ -77,14 +92,22 @@
             ctx.clearRect(0,0, 888, 555);
             balls.shift();
             add();
+            var lastBall = balls[balls.length-1];
+
+            if(lastBall.x== food.x*20 && lastBall.y == food.y*20){
+                score += 1;
+                add();
+                createFood();
+
+            }
 
 
             for(var i=0; i<balls.length; i++){
                 ball = balls[i];
                 if(i == balls.length - 1){
-                    ctx.fillStyle = "lightgreen";
+                    ctx.fillStyle = "black";
                 } else{
-                    ctx.fillStyle = "#ff0000";
+                    ctx.fillStyle = "blue";
                 }
 
 
@@ -104,14 +127,23 @@
                     ball.y = 480;
                 }
 
+                if(ball.x == lastBall.x && ball.y == lastBall.y && i < balls.length-2){
+                    alert("Game Over, Your score is: " + score);
+                    init();
+
+                }
+
+
+
                 ctx.fillRect(ball.x, ball.y, 19, 19);
 
             }
 
             ctx.fillRect(food.x * 20, food.y *20, 19, 19);
+            ctx.fillText("score:" + score, 480, 480);
         }
 
-        setInterval(ani, 222);
+        setInterval(ani, 100);
     </script>
 
 </body>
