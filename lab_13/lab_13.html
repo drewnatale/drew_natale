@@ -5,21 +5,23 @@
 <body>
 
 <form>
-    weight: <input type = "text" size = 10 id = "weight" value = "enter weight" />
+    height: <input type = "text" size = 10 maxlength = 10 id = "height" value = "enter height"/>
+    <br/>
+    weight: <input type = "text" size = 10 maxlength = 10 id = "width" value = "enter weight"/>
     <br/>
     <br/>
-    height: <input type = "text" size = 10 id = "height" value = "enter height" />
-    <br/>
-    <br/>
-    <input type = "button" value = "calculate" onclick = "calcPerim()"/>
+    <input type = "button" value = "calculate" onclick = "calcBMI()"/>
 </form>
-    <script type = "text/javascript">
-        function calcPerim() {
-            var w = document.getElementById("weight").value;
-            var h = documnet.getElementById("height").value;
-            document.write("Your BMI is... " + (w*703/h));
-        }
-    </script>
+
+<script type = "text/javascript">
+    function calcBMI() {
+        var h = document.getElementById("height").value;
+        var w = document.getElementById("width").value;
+        document.write("Your BMI is...." + (w*703)/(h*h));
+    }
+
+</script>
 
 </body>
 </html>
+
